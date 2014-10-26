@@ -3,6 +3,7 @@ Brick Painter
 
 The Brick Painter is a PHP web application that transforms any image (of a reasonable size) into bricks, for easy reproduction.
 Live version accessible at http://www.arpia.be/brickpainter/
+
 It was initially created to allow the author to create LEGO-based reproductions of famous impressionist and surrealist paintings.
 
 The Brick Painter has a limited colour palette - it only includes the colours that are available
