@@ -1,0 +1,354 @@
+/* Much of this is Peter Craddock's "general" style for web applications and can be modified to better match the feel of Brick Painter */
+
+* {margin:0;padding:0;position: relative;} 
+
+html, body{
+	padding:0;
+	margin:0;
+}
+body {
+	text-align:center;
+	background: #FFF;
+	font-size: 76.5%;
+	font-family: 'Gill Sans', 'Helvetica Neue', Helvetica, Calibri, Arial, sans-serif;
+	color: #000;
+}
+
+a,a:visited {
+	color: #005490;
+	text-decoration: none;
+}
+	a:hover {
+		text-decoration: underline;
+		color: #001C4F;
+	}
+
+#container {
+	width: 860px;
+	left: 50%;
+	margin-left: -430px;
+}
+.contractform {
+	text-align: left;
+}
+#top {
+	margin: 26px 0 0px;
+	height: 109px;
+}
+	h1#logo {
+		margin-top: 14px;
+		display: block;
+		width: 355px;
+		height: 80px;
+		line-height: 80px;
+		font-family: 'Helvetica Neue', Helvetica, Arial;
+		font-weight: 100;
+		font-size: 2.6em;
+		letter-spacing: 1px;
+/* If visual logo included: */
+/*		background: url('logo.png') no-repeat;
+		background-size: 355px 80px;*/
+	}
+		h1#logo a {
+			color: #000;
+			text-decoration: none;
+			display: block;
+			height: 80px;
+			width: 355px;
+		}
+			h1#logo a span {
+/* If visual logo included: */
+/*				position: absolute;
+				left: -9999px;*/
+			}
+
+section {
+	margin: 0 0 2em;
+}
+
+section p,section li {
+	padding: 0.8em 0;
+}
+section p,section li,section h2,section ul {
+	line-height: 1.4em;
+}
+	section h2 {
+		line-height: 1.6em;
+	}
+	section.text p {
+		padding: 0.5em 0;
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+section.text ul {
+	padding: 0 0 0 30px;
+	font-size: 1.2em;
+	text-align: left;
+}
+	section.text ul li {
+		font-size: 1em;
+		padding: 0 0 6px 0;
+	}
+
+h2 {
+	margin: 0 0 10px 60px;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: left;
+}
+	h2 span {
+		padding: 5px;
+		border-bottom: 2px solid #CE003D;
+	}
+			
+.data {
+	border: 2px solid #DAAFBC;
+	margin:10px;
+	padding:5px 2px 5px 2px;
+	line-height: 1.2em;
+	font-size: 0.8em;
+	font-family: 'Gill Sans', 'Helvetica Neue', Helvetica, Calibri, Arial, sans-serif;
+	background-color: #F5F5F5;
+	color: #0F0F0F;
+	outline: none;
+	text-align: center;
+}
+	.data:focus {
+		border: 2px solid #BD7A10;
+	}
+input.data {
+	width: 30px;
+}
+input.data.src {
+	width: 300px;
+}
+.clear {
+	clear: both;
+}
+#submit {
+	display: block;
+	min-height: 26px;
+	width: 400px;
+	margin-left: 230px;
+}
+	#submit input,.resetdata input {
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+	#contactform #submit {
+		width: auto;
+		margin: auto;
+	}
+	#submit .col1right,#submit .col2left {
+		display: block;
+	}
+	#submit .col1right {
+		width: 250px;
+		float: right;
+		text-align: left;
+		padding-left: 10px;
+	}
+	#submit .col2left {
+		width: 210px;
+		float: left;
+		text-align: right;
+		padding-right: 10px;
+	}
+#footer {
+	clear: both;
+}
+
+p {
+font-size:1.1em;
+line-height:1.4em;
+}
+p.small {
+	font-size: 1em;
+}
+em.small {
+	font-size: 0.8em;
+}
+p.copyright {
+	font-size: 0.8em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+p.centre,section.text p.centre {
+	text-align: center;
+}
+p.images img {
+	padding: 0 10px;
+}
+	p.images a:hover {
+		text-decoration: none;
+	}
+span.underline {
+	text-decoration: underline;
+}
+
+#brickform h2,#brickform h3 {
+	text-align: left;
+}
+#brickform input.formitem,#brickform textarea.formitem {
+	border: 2px solid #99c9fe;
+	margin:10px;
+	padding:5px 8px 5px 8px;
+	line-height: 1.2em;
+	font-size: 0.8em;
+	font-family: 'Gill Sans', 'Helvetica Neue', Helvetica, Calibri, Arial, sans-serif;
+	background-color: #F5F5F5;
+	color: #0F0F0F;
+	outline: none;
+	text-align: left;
+}
+	#brickform input.formitem:focus,#brickform textarea.formitem:focus {
+		border: 2px solid #BD7A10;
+	}
+	#brickform input.formitem {
+		width: 240px;
+	}
+		#brickform input.formitem.short {
+			width: 120px;
+		}
+	#brickform select {
+		margin:15px 18px;
+	}
+	#brickform textarea.formitem {
+		width: 380px;
+		min-height: 80px;
+	}
+#brickform label,#brickform .label {
+	padding-top: 15px;
+}
+	.contactform label,.contactform .label {
+		display: block;
+		float: left;
+	}
+
+.submitbutton {
+	padding: 5px 12px;
+	background: #70FA43 no-repeat left top;
+	color: #02222C;
+	font-weight: bold;
+	border: 2px solid #49D90F;
+	font-size: 0.9em;
+	cursor: pointer;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+	.submitbutton:hover {
+		background: no-repeat left top #35D634;
+		border: 2px solid #15A324;
+	}
+	a.submitbutton {
+		color: #02222C;
+	}
+
+.data, #brickform input.formitem,#brickform textarea.formitem{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+ul.form {
+	list-style: none;
+	margin: 0;
+}
+ul.form li {
+	list-style: none;
+	clear: both;
+	text-align: left;
+	display: block;
+	border-bottom: 2px dashed #DBDBDB;
+}
+	.form li p.inputtitle {
+/*		text-align: center; */
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 1.6em 0 0;
+	}
+		.form li p.inputtitle span {
+			padding: 3px;
+			border-bottom: 1px solid #CE003D;
+		}
+	.form li p.sub {
+		padding: 0.4em 0 0.6em;
+		font-style: italic;
+/*		text-align: center; */
+	}
+		p.single strong {
+			padding: 4px 8px;
+			border: 2px solid #31CA03;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+		}
+
+.colour {
+	padding: 0 6px;
+}
+
+table#resultlist {
+	font-size: 1.1em;
+}
+table#resultlist,table#resultlist tr,table#resultlist td {
+	border-collapse: collapse;
+	border: none;
+	text-align: left;
+}
+table#resultlist td,table#resultlist th {
+	vertical-align: middle;
+	padding: 4px 20px 4px 0;
+}
+
+.col1,.col2 {
+	width: 355px;
+	display: block;
+	padding: 0px 15px;
+	text-align: left;
+}
+	.col1.long {
+		margin: 0;
+	}
+	.col1.long,.col2.long {
+		width: 415px;
+	}
+.col1 {
+	float: left;
+	padding-left: 0px;
+	margin: 0 0 0 75px;
+}
+	.col1.long p {
+		text-align: left;
+	}
+.col2 {
+	padding-left: 30px;
+	padding-right: 0;
+	margin-left: 415px;
+}
+.col2 p {
+	text-align: left;
+}
+.col2 p select {
+	margin-left: 10px;
+}
+
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	h1#logo {
+/* If visual logo included: */
+/*		background: url('logo@2x.png') no-repeat;
+		background-size: 355px 80px;*/
+	}
+}
