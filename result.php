@@ -254,7 +254,8 @@ $colorsstd = array(
 	array(205, 98, 152),
 	array(228, 173, 200),
 //	array(253, 234, 140),
-	array(52, 43, 117)
+	array(159, 112, 183),
+	array(85, 106, 50)
 );
 
 // And now the colours by name:
@@ -300,7 +301,8 @@ $colorsstdname = array(
 	'Bright purple',
 	'Light purple',
 //	'Cool yellow',
-	'Medium lavandel'
+	'Medium lavender',
+	'Olive green'
 );
 
 // By default, our active colour palette will be the standard, "colours" one:
